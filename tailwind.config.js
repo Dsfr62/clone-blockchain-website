@@ -7,7 +7,12 @@ export default {
     "./src/pages/*.tsx"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "yellow-1": "#f7c562",
+        "purple-1": "#9585ae"
+      }
+    },
   },
   plugins: [],
 }
