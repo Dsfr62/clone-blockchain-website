@@ -8,6 +8,7 @@ function SignInPage() {
 
     async function handleForm(e: FormEvent<HTMLFormElement>) {
         e.preventDefault()
+        console.log(`Email: ${email}\nPassword: ${password}`)
         alert("LOGIN IS A SUCCESS")
     }
 
