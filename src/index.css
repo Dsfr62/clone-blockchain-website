@@ -3,5 +3,25 @@
 @tailwind utilities;
 
 .navbar-option {
-    @apply py-4 px-10 xl:px-14 border-l-2 border-black cursor-pointer hover:bg-black hover:text-white transition-all ease-linear font-medium
+  @apply py-4 px-6 xl:px-10 border-black cursor-pointer hover:bg-black hover:text-white transition-all ease-linear font-medium
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animation-fade-in-12 {
+  animation: 1.2s fade-in cubic-bezier(0.25, 1, 0.5, 1) backwards;
+}
+
+.animation-fade-in-20 {
+  animation: 2s fade-in cubic-bezier(0.25, 1, 0.5, 1) backwards;
 }

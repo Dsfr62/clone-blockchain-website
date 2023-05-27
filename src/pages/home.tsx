@@ -4,9 +4,9 @@ import Layout from "../components/global/layout"
 function HomePage() {
     return (
         <Layout>
-            <div className="flex flex-col w-full h-[85%] px-12">
-                <div className="w-full flex items-center justify-center h-full gap-2">
-                    <div className="flex flex-col w-[70%]">
+            <div className="flex flex-col w-full h-[85%] px-0 lg:px-12 pt-2 md:pt-4">
+                <div className="w-full flex flex-col md:flex-row md:items-center justify-center h-full gap-2">
+                    <div className="flex flex-col w-full md:w-[70%]">
                         <p className="text-5xl text-ellipsis font-semibold w-[80%] xl:w-[60%]">
                             <span className="underline decoration-yellow-1 decoration-[0.2rem]">
                                 Secure</span> Your Data with Our Blockchain Cloud 
@@ -17,9 +17,9 @@ function HomePage() {
                             <button type="button" className="p-3 xl:p-4 font-medium hover:bg-black hover:text-white ease-linear transition-all">Request a demo</button>
                         </div>
                     </div>
-                    <p className="w-[30%]">Imagem</p>
+                    <p className="w-[30%] invisible md:visible">Imagem</p>
                 </div>
-                <div className="w-full h-[30%] flex gap-2">
+                <div className="w-full h-[30%] flex flex-col md:flex-row gap-2">
                     <div className="flex w-[70%] items-center">
                         <div className="px-6 py-2">
                             <p className="text-2xl font-semibold">20k+</p>
@@ -34,7 +34,8 @@ function HomePage() {
                             <p className="text-gray-400">storage capacity</p>
                         </div>
                     </div>
-                    <p className="w-[30%] text-[0.6rem] xl:text-[0.8rem] font-medium px-4 py-2 text-ellipsis border-l border-black text-ellipsis self-center">
+                    <p 
+                    className="w-full md:w-[30%] text-[0.6rem] xl:text-[0.8rem] font-medium px-4 pt-6 pb-4 md:py-2 text-ellipsis border-t md:border-t-0 md:border-l border-black text-ellipsis self-center">
                         Our platform offers a secure, decentralized approach to data storage, ensuring your sensitive data is protected from unauthorized access and tampering. With our cutting-edge technology, you can trust that your data is safe and secure.
                     </p>
                 </div>
