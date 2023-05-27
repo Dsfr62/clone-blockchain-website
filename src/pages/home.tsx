@@ -1,5 +1,5 @@
 import Layout from "../components/global/layout"
-
+import homeBg from "../../public/home-bg.png"
 
 function HomePage() {
     return (
@@ -17,10 +17,10 @@ function HomePage() {
                             <button type="button" className="p-3 xl:p-4 font-medium hover:bg-black hover:text-white ease-linear transition-all">Request a demo</button>
                         </div>
                     </div>
-                    <p className="w-[30%] invisible md:visible">Imagem</p>
+                    <img className="invisible hidden md:visible md:flex w-[35%]" src={homeBg} alt="home-background-img by:https://www.linkedin.com/in/raulvictor772/" />
                 </div>
                 <div className="w-full h-[30%] flex flex-col md:flex-row gap-2">
-                    <div className="flex w-[70%] items-center">
+                    <div className="flex w-[65%] items-center">
                         <div className="px-6 py-2">
                             <p className="text-2xl font-semibold">20k+</p>
                             <p className="text-gray-400">users</p>
@@ -35,7 +35,7 @@ function HomePage() {
                         </div>
                     </div>
                     <p 
-                    className="w-full md:w-[30%] text-[0.6rem] xl:text-[0.8rem] font-medium px-4 pt-6 pb-4 md:py-2 text-ellipsis border-t md:border-t-0 md:border-l border-black text-ellipsis self-center">
+                    className="w-full md:w-[35%] text-[0.6rem] xl:text-[0.8rem] font-medium px-4 pt-6 pb-4 md:py-2 text-ellipsis border-t md:border-t-0 md:border-l border-black text-ellipsis self-center">
                         Our platform offers a secure, decentralized approach to data storage, ensuring your sensitive data is protected from unauthorized access and tampering. With our cutting-edge technology, you can trust that your data is safe and secure.
                     </p>
                 </div>

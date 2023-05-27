@@ -1,5 +1,6 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import HomePage from './pages/home'
+import SignInPage from './pages/signin'
 
 function App() {
 
@@ -7,6 +8,10 @@ function App() {
     {
       path: "/",
       element: <HomePage />
+    },
+    {
+      path: "/signin",
+      element: <SignInPage />
     }
   ])
 

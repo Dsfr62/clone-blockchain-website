@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -15,7 +15,7 @@ const Navbar = () => {
                 <p className="navbar-option border-l-2">Services</p>
                 <p className="navbar-option border-l-2">Pricing</p>
                 <p className="navbar-option border-l-2">Resources</p>
-                <p className="navbar-option border-x-0 lg:border-l-2 ">Sign In</p>
+                <Link to="signin"><p className="navbar-option border-x-0 lg:border-l-2">Sign In</p></Link>
             </div>
             <svg 
             onClick={() => setNav(!nav)}
